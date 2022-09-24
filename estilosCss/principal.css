@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: url(/images/arena.jpg);
+  
+}
+
+.wrapper{
+  background: #9E7F7F;
+  width: 100%;
+}
+.wrapper nav{
+  position: relative;
+  display: flex;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .content{
+  display: flex;
+  align-items: center;
+}
+nav .content .links{
+  margin-left: 80px;
+  display: flex;
+}
+.content .logo a{
+  color: #fff;
+  font-size: 50px;
+  border:none; 
+  font-weight: 900;
+}
+.content .links li{
+  list-style: none;
+  line-height: 70px;
+}
+.content .links li a,
+.content .links li label{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 20px;
+  margin-left: 25px;
+  transition: all 0.3s ease;
+}
+.content .links li label{
+  display: none;
+}
+.content .links li a:hover,
+.content .links li label:hover{
+  border-bottom: 2px solid #c7c7c7;
+  transform: translateX(-25px);
+}
+
+
+
+.wrapper .search-icon,
+.wrapper .menu-icon{
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+}
+.wrapper .menu-icon{
+  display: none;
+}
+.wrapper #show-search:checked ~ .search-icon i::before{
+  content: "\f00d";
+}
+
+.wrapper .search-box{
+  position: absolute;
+  height: 100%;
+  max-width: calc(100% - 50px);
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.wrapper #show-search:checked ~ .search-box{
+  opacity: 1;
+  pointer-events: auto;
+}
+.search-box input{
+  width: 100%;
+  height: 60px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  color: #fff;
+  background: #9E7F7F;
+  transform: translateY(-20px);
+  margin-left: -40px;
+  padding: 0 100px 0 15px;
+}
+.search-box input::placeholder{
+  color: #fff;
+}
+.search-box .go-icon{
+  position: absolute;
+  right: 10px;
+  top: 10%;
+  line-height: 60px;
+  width: 70px;
+  background: #171c24;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.wrapper input[type="checkbox"]{
+  display: none;
+}
+
+
+/* Dropdown Menu code start */
+.content .links ul{
+  position: absolute;
+  background: #9E7F7F;
+  top: 80px;
+  z-index: -1;
+  margin-left: 30px;
+  opacity: 0;
+  visibility: hidden;
+}
+.content .links li:hover > ul{
+  top: 70px;
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.content .links ul li a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px!important;
+}
+.content .links ul ul{
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
+}
+.content .links ul li{
+  position: relative;
+}
+.content .links ul li:hover ul{
+  top: 0;
+}
+
+/* Responsive code start */
+@media screen and (max-width: 1250px){
+  .wrapper nav{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links{
+    margin-left: 30px;
+  }
+  .content .links li a{
+    padding: 8px 13px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 100px);
+  }
+  .wrapper .search-box input{
+    padding: 0 100px 0 15px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .wrapper .menu-icon{
+    display: block;
+  }
+  .wrapper #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+  }
+  nav .content .links{
+    display: block;
+    position: fixed;
+    background: #9E7F7F;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  }
+  nav #show-menu:checked ~ .content .links{
+    left: 0%;
+  }
+  .content .links li{
+    margin: 15px 20px;
+  }
+  /* estilos del menu lateral cuando la pagina este en responsive */
+  .content .links li a,
+  .content .links li label{
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link{
+    display: none;
+  }
+
+  /* dropdown responsive code start */
+  .content .links ul,
+  .content .links ul ul{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-features:checked ~ ul,
+  .content .links #show-services:checked ~ ul,
+  .content .links #show-items:checked ~ ul{
+    max-height: 100vh;
+  }
+  .content .links ul li{
+    margin: 7px 20px;
+  }
+  .content .links ul li a{
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .wrapper nav{
+    padding: 0 10px;
+  }
+  .content .logo a{
+    font-size: 27px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 70px);
+  }
+  .wrapper .search-box .go-icon{
+    width: 30px;
+    right: 0;
+  }
+  .wrapper .search-box input{
+    padding-right: 30px;
+  }
+}
+
+.grid{
+  margin-top: 50px;
+  display: grid;
+  width: 100%;
+  grid-gap: 4rem;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+
+.grid-item{
+  background: #EEE9E3;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  border: 1px solid black;
+  box-shadow: 0 3rem 6rem rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.grid-item:hover{
+  transform: translateY(-0.5%);
+  box-shadow: 0 2rem 4rem #9E7F7F;
+}
+
+.card-img{
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.card-content{
+  padding: 3rem;
+}
+
+.card-header{
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+
+.direcion{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.card-text{
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+.card-btn{
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  background: #9E7F7F;
+  box-shadow: 0 5px  black;
+  border: none;
+  border-radius: 40px;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.card-btn:hover{
+  background: #9e7f7f8c;
+}
+
+.filtro{
+  display: none;
+}
+
+
+
+
+
+
+
+ /* formulario donde las personas podran hacer el comentario */
+ .contact{
+  box-sizing: border-box;
+  border: 2px solid #111;
+  cursor: pointer;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 30px;
+
+}
+
+.contact.active{
+  width: 800px;
+  min-height: 400px;
+}
+
+.contact.active:hover{
+  background: #9E7F7F;
+  color: #fff;
+}
+
+.contact:hover{
+  background: #9E7F7F;
+  color: #fff;
+
+}
+.contact h2{
+  margin: 0;
+  padding: 20px;
+  font-size: 1.5em;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact  h2 span{
+  display: inline-block;
+  color: red;
+}
+
+.contact.active h2 span{
+   transform: rotate(45deg);
+   float: right;
+}
+
+form{
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+form .row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form .row .col-2{
+  width:Calc(50%-10px);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+form .row .col-2:nth-child(odd){
+  margin-right: 10px;
+}
+form .row .col-2:nth-child(even){
+  margin-left: 10px;
+}
+
+
+
+form .row .col-1{
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+
+
+}
+.contact label{
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact input.text,
+.contact textarea
+{
+  width: 100%;
+  border: 2px solid #EEE9E3;
+  padding: 10px;
+  outline:none;
+  box-sizing: border-box;
+  font-weight:bold ;
+  font-size: 18px;
+  font-family: sans-serif;
+  resize: none;
+}
+
+.contact textarea{
+  width: 700px;
+  height: 200px;
+}
+
+.contact input[type="submit"]
+{
+  border: 2px solid #EEE9E3;
+  padding: 10px;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: sans-serif;
+  outline: none;
+  cursor: pointer;
+  background: #9E7F7F;
+  color: #fff;
+}
+
+.contact form{
+  visibility: hidden;
+  display: none;
+}
+
+.contact.active form{
+  visibility: visible;
+  display: block;
+}
+
+/* filtro para hacer las validaciones  */
+.msg-error {
+  color: red;
+  display: block;
+  margin-top: 10px;
+}
+
+
+/* zona de comentarios */
+
+#L{ 
+  display: block; 
+  width: 600px; 
+  margin: 0 auto; 
+  padding-top: 35px; 
+}
+
+#container { 
+  display: block; 
+  width: 100%; 
+  background: #fff; 
+  padding: 14px 20px; 
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px; 
+  border-radius: 4px; 
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+
+/* comments area */
+#comments { display: block; }
+
+#comments .cmmnt, ul .cmmnt, ul ul .cmmnt { display: block; position: relative; padding-left: 65px; border-top: 1px solid #ddd; }
+
+#comments .cmmnt .avatar  { position: absolute; top: 8px; left: 0; }
+#comments .cmmnt .avatar img { 
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
+  border-radius: 3px; 
+  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.44);
+  -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.44);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.44);
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+#comments .cmmnt .avatar a:hover img { opacity: 0.77; }
+
+#comments .cmmnt .cmmnt-content { padding: 0px 3px; padding-bottom: 12px; padding-top: 8px; }
+
+#comments .cmmnt .cmmnt-content header { font-size: 1.3em; display: block; margin-bottom: 8px; }
+#comments .cmmnt .cmmnt-content header .pubdate { color: #777; }
+#comments .cmmnt .cmmnt-content header .userlink { font-weight: bold; } 
+
+#comments .cmmnt .replies { margin-bottom: 7px; }
+
+
+ 

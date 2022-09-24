@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: url(../imagenes/mascotas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.container-all {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.ctn-form {
+    width: 100%;
+    padding: 40px;
+    background: #f7f7f7d0;
+}
+
+
+.title {
+    text-align: center;
+    margin-top: 14px;
+    font-weight: 300;
+    color: #7a7a7a;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #7a7a7a;
+}
+
+input[type="text"],
+input[type="date"],
+.select,
+input[type="password"]{
+    width: 100%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+    outline: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+    color: #0a0a0a;;
+    font-size: 16px;
+}
+
+input[type="file"]{
+    margin-top: 10px;
+    color: #9E7F7F;
+}
+
+textarea{
+    width: 100%;
+    margin-top: 10px;
+    background:#f7f7f7d0;
+    color: black;
+    border: 1px dotted black;
+    resize: none;
+}
+
+
+/*ojo para ver clave*/
+.icon{
+
+    position: relative;
+    height: 40px;
+    left: 350px;
+    opacity: 0.3;
+    cursor: pointer;
+
+}
+
+.icon{
+  transform: translateY(-40px);
+}
+/*al tocar el icono del ojo tendra una opacidad*/
+.icon:hover
+{
+    opacity: 0.8;
+}
+
+form .termin a{
+    margin-left: 40px;
+    text-align: center; 
+    text-decoration: none;
+    font-size: 18px;
+    color: #7a7a7a;
+}
+
+input[type="checkbox"]{
+    transform: translateY(20px);
+    margin-left: 10px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    margin-top: 60px;
+    color: black;
+    border: 0px;
+    border-radius: 20px;
+    background: #9E7F7F;;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+
+.text-footer {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #7a7a7a;
+    font-weight: 300;
+}
+
+.text-footer a {
+    color: #029EE1;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* LADO DERECHO */
+.ctn-text {
+    width: 100%;
+    background-image: url(../imagenes/friends.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    position: relative;
+}
+
+/*colores y lo que tendra el cuadro del lado derecho*/
+.capa {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #9E7F7F, rgba(255, 255, 255, 0.382));
+    opacity: 0.8;
+}
+
+/*estilos para el texto que ira en el interior del cuadro*/
+.title-description {
+    position: relative;
+    top: 80px;
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.text-description {
+    position: relative;
+    top: 110px;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+
+/* boton para enviar archivos */
+form #texto{
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+
+form #div_file{
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+    width: 400px;
+    background: #9E7F7F;
+    border-radius:5px;    
+
+}
+
+form #btn_enviar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+
+/* TEXTO DE ERROR PARA VALIDACION EN PHP */
+.msg-error {
+    color: red;
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 800px) {
+
+    .ctn-text {
+        display: none;
+    }
+
+    .ctn-form {
+        margin: auto;
+        width: 100%;
+        background: white;
+    }
+    
+}
+
+
+
+
+   

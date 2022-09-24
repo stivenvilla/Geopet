@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body{
+  background: url(../aleman.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.sidebar{
+  position: fixed;
+  width: 240px;
+  left: -240px;
+  height: 100%;
+  background: #9E7F7F;
+  transition: all .5s ease;
+  z-index: 100;
+}
+.sidebar header{
+  font-size: 28px;
+  color: black;
+  line-height: 70px;
+  text-align: center;
+  background: #9E7F7F;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.sidebar a{
+  display: block;
+  height: 65px;
+  width: 100%;
+  color: black;
+  line-height: 65px;
+  padding-left: 30px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-left: 5px solid transparent;
+  font-family: 'Open Sans', sans-serif;
+  transition: all .5s ease;
+}
+a.active,a:hover{
+  border-left: 5px solid #EEE9E3;
+  color: #EEE9E3;
+}
+.sidebar a i{
+  font-size: 23px;
+  margin-right: 16px;
+}
+.sidebar a span{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid #262626;
+  margin: 15px 30px;
+  font-size: 29px;
+  background: #9E7F7F;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  transition: all .5s ease;
+  z-index: 100;
+}
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel{
+  margin-left: 245px;
+  opacity: 1;
+  visibility: visible;
+}
+@media(max-width : 860px){
+  .sidebar{
+    height: auto;
+    width: 70px;
+    left: 0;
+    margin: 100px 0;
+  }
+  header,#btn,#cancel{
+    display: none;
+  }
+  span{
+    position: absolute;
+    margin-left: 23px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sidebar a{
+    height: 60px;
+  }
+  .sidebar a i{
+    margin-left: -10px;
+  }
+  a:hover {
+    width: 200px;
+    background: inherit;
+  }
+  .sidebar a:hover span{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+/* formulario de actualizar */
+.form-register{
+  width: 400px;
+  background: #9E7F7F;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 7px 13px 37px #9e7f7fdd;
+}
+
+
+.controls {
+  width: 100%;
+  background: #eeddddb8;
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 16px;
+  border: 1px solid #EEDDDD;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: black;
+}
+
+textarea{
+  width: 100%;
+  background: #eeddddb8;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #EEDDDD;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: black;
+  resize: none;
+  border-radius:10px;
+}
+
+.form-register .boton{
+  width: 100%;
+  background: #eeddddb8;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  color: black;
+  margin: 16px 0;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+/* formulario para actualizar */
+.container-all {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ctn-form {
+  width: 100%;
+  padding: 40px;
+  background: #f7f7f7d0;
+}
+
+
+.title {
+  text-align: center;
+  margin-top: 14px;
+  font-weight: 300;
+  color: #7a7a7a;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #7a7a7a;
+}
+
+input[type="text"]{
+  width: 100%;
+  height: 30px;
+  background: rgba(0, 0, 0, 0);
+  border: 0px;
+  outline: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+  color: #0a0a0a;;
+  font-size: 16px;
+}
+
+input[type="file"]{
+  margin-top: 10px;
+  color: #9E7F7F;
+}
+
+textarea{
+  width: 100%;
+  margin-top: 10px;
+  background:#f7f7f7d0;
+  color: black;
+  border: 1px dotted black;
+  resize: none;
+}
+
+
+
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  margin-top: 60px;
+  color: black;
+  border: 0px;
+  border-radius: 20px;
+  background: #9E7F7F;;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 800px) {
+
+  .ctn-text {
+      display: none;
+  }
+
+  .ctn-form {
+      margin: auto;
+      width: 100%;
+      background: white;
+  }
+  
+}
+
+
+/* diseño de carta  */
+.container{
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.car{
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 300px 0 50px rgba(0,0,0,.5);
+}
+.car:hover{
+    z-index: 1000px;
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0,0,0,.5);
+}
+
+.car .imgBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transform-origin: left ;
+    z-index: 1;
+    transition: 1s;
+}
+
+.car:hover .imgBox{
+    transform: rotateY(-135deg);
+}
+
+
+
+.car .imgBox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.car .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+
+
+

@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body{
+  background: url(../aleman.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.sidebar{
+  position: fixed;
+  width: 240px;
+  left: -240px;
+  height: 100%;
+  background: #9E7F7F;
+  transition: all .5s ease;
+}
+.sidebar header{
+  font-size: 28px;
+  color: black;
+  line-height: 70px;
+  text-align: center;
+  background: #9E7F7F;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.sidebar a{
+  display: block;
+  height: 65px;
+  width: 100%;
+  color: black;
+  line-height: 65px;
+  padding-left: 30px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-left: 5px solid transparent;
+  font-family: 'Open Sans', sans-serif;
+  transition: all .5s ease;
+}
+a.active,a:hover{
+  border-left: 5px solid #EEE9E3;
+  color: #EEE9E3;
+}
+.sidebar a i{
+  font-size: 23px;
+  margin-right: 16px;
+}
+.sidebar a span{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid #262626;
+  margin: 15px 30px;
+  font-size: 29px;
+  background: #9E7F7F;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  transition: all .5s ease;
+}
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel{
+  margin-left: 245px;
+  opacity: 1;
+  visibility: visible;
+}
+@media(max-width : 860px){
+  .sidebar{
+    height: auto;
+    width: 70px;
+    left: 0;
+    margin: 100px 0;
+  }
+  header,#btn,#cancel{
+    display: none;
+  }
+  span{
+    position: absolute;
+    margin-left: 23px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sidebar a{
+    height: 60px;
+  }
+  .sidebar a i{
+    margin-left: -10px;
+  }
+  a:hover {
+    width: 200px;
+    background: inherit;
+  }
+  .sidebar a:hover span{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+/* formulario de actualizar */
+.form-register{
+  width: 400px;
+  background: #9E7F7F;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 7px 13px 37px #9e7f7fdd;
+}
+
+
+.controls {
+  width: 100%;
+  background: #eeddddb8;
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 16px;
+  border: 1px solid #EEDDDD;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: black;
+}
+
+textarea{
+  width: 100%;
+  background: #eeddddb8;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #EEDDDD;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: black;
+  resize: none;
+  border-radius:10px;
+}
+
+.form-register .boton{
+  width: 100%;
+  background: #eeddddb8;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  color: black;
+  margin: 16px 0;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+/* formulario para actualizar */
+.container-all {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ctn-form {
+  width: 100%;
+  padding: 40px;
+  background: #f7f7f7d0;
+}
+
+
+.title {
+  text-align: center;
+  margin-top: 14px;
+  font-weight: 300;
+  color: #7a7a7a;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #7a7a7a;
+}
+
+input[type="text"]{
+  width: 100%;
+  height: 30px;
+  background: rgba(0, 0, 0, 0);
+  border: 0px;
+  outline: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+  color: #0a0a0a;;
+  font-size: 16px;
+}
+
+input[type="file"]{
+  margin-top: 10px;
+  color: #9E7F7F;
+}
+
+textarea{
+  width: 100%;
+  margin-top: 10px;
+  background:#f7f7f7d0;
+  color: black;
+  border: 1px dotted black;
+  resize: none;
+}
+
+
+
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  margin-top: 60px;
+  color: black;
+  border: 0px;
+  border-radius: 20px;
+  background: #9E7F7F;;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 800px) {
+
+  .ctn-text {
+      display: none;
+  }
+
+  .ctn-form {
+      margin: auto;
+      width: 100%;
+      background: white;
+  }
+  
+}
+
+
+/* boton para descargar base de datos */
+.button {
+  display: inline-block;
+  border-radius: 7px;
+  border: none;
+  background: #9E7F7F;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  box-shadow: 0px 14px 56px -11px #7a7a7a;
+  width: 10em;
+  padding: 1em;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin-left: 35%;
+  margin-top: 100px;
+ }
+ 
+ .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+ }
+ 
+ .button span:after {
+  content: 'Backup';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.7s;
+ }
+ 
+ .button:hover span {
+  padding-right: 3.55em;
+ }
+ 
+ .button:hover span:after {
+  opacity: 4;
+  right: 0;
+ }
+
+
+ /* boton para modificar foto */
+.icon-btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #cdcdcd;
+  background: #9E7F7F;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+  font-weight: 500;
+  font-family: inherit;
+  transform: translateY(-1000px);
+  margin-left: 1100px;
+  color: white;
+  
+}
+
+.add-btn:hover {
+  width: 120px;
+  cursor: pointer;
+}
+
+.add-btn::before,
+.add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 10px;
+  top: calc(50% - 2px);
+  background: #EEDDDD;
+}
+
+.add-btn::after {
+  right: 14px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.add-btn::before {
+  left: 14px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.icon-btn:focus {
+  outline: none;
+}
+
+.btn-txt {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.add-btn:hover::before,
+.add-btn:hover::after {
+  width: 4px;
+  border-radius: 2px;
+}
+
+.add-btn:hover .btn-txt {
+  opacity: 1;
+}
+
+.add-icon::after,
+.add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  top: calc(50% - 10px);
+  background: #EEDDDD;
+  overflow: hidden;
+}
+
+.add-icon::before {
+  left: 22px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.add-icon::after {
+  right: 22px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.add-btn:hover .add-icon::before {
+  left: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+
+.add-btn:hover .add-icon::after {
+  right: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+
+/* esta parte sera la tabla que tiene almacenada la infoprmacion de la tabla reservas */
+
+#main-container{
+  margin-left: 250px;
+  margin-top: 200px;
+  width: 600px;
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+  border: 2px solid black;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: #9E7F7F;
+	border-bottom: solid 5px white;
+	color: white;
+  border: 2px solid black;
+}
+
+tr:nth-child(even){
+	background-color: white;
+}
+
+tr:hover td{
+	background-color: #9E7F7F;
+	color: #EEDDDD;
+}
+
+.filtro{
+  display: none;
+}
+
+/* este sera el espacio en el que el administrador podra buscar las empresas*/
+
+.buscar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  background: #9E7F7F;
+  padding: 10px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+.buscar_texto{
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  float: left;
+  line-height: 60px;
+  transition: .3s;
+  width: 0;
+}
+
+.botonBus{
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.buscar_texto::placeholder{
+  color: rgba(255, 255, 255, 0.757);
+  text-align: center;
+}
+
+@media screen and (min-width:480px) {
+  .buscar:hover>.buscar_texto{
+    width: 190px;
+  }
+  
+}
+
+@media screen and (min-width:768px) {
+  .buscar:hover>.buscar_texto{
+    width: 300px;
+  }
+  
+}
+
+
+
+
+

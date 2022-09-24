@@ -1,0 +1,77 @@
+::root{
+  --principal:#9E7F7F;
+  --segundo:#EEDDDD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+      background:url(../imagenes/Accesorios.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      
+  }
+  
+  .form-register{
+    width: 400px;
+    background: #9E7F7F;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 7px 13px 37px #9e7f7fdd;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: 700;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #eeddddb8;
+    padding: 10px;
+    border-radius: 40px;
+    margin-bottom: 16px;
+    border: 1px solid #EEDDDD;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black;
+  }
+  
+  textarea{
+    width: 100%;
+    background: #eeddddb8;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #EEDDDD;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black;
+    resize: none;
+    border-radius:10px;
+  }
+ 
+  .form-register .boton{
+    width: 100%;
+    background: #eeddddb8;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    color: black;
+    margin: 16px 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }

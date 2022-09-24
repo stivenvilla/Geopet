@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/*se crean variables*/
+:root{
+    --principal: #9E7F7F; 
+    --segundario: #EEE9E3;
+}
+
+/*se reinicia la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif ;
+    
+}
+
+/*se le dan estilos al cuerpo*/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--segundario);
+}
+
+/*se posiciona el boton*/
+.boton{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/*se crea el boton en donde va ser un circulo de color rojo que va a estar centrado y va a tener un leve
+sombreado*/
+.boton .play{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: red;
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 25px #ff000066;
+    transition: 0.3s;
+    animation: saltar 1.5s ease-in-out infinite;
+}
+
+/*le estoy haciendo una animacion de salto al boton*/
+@keyframes saltar{
+    0%
+    {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(-15px);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+
+/*fondo que tendra la pagina al darle click al boton*/
+.boton.active .play{
+    box-shadow: 0 0 0 150vh var(--principal);
+
+}
+
+/*se crea por medio de border el icono de play que estara dentro del circulo antes creado*/
+.boton .play::before{
+    content: '';
+    position: absolute;
+    border: 30px solid #fff;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 0  solid transparent;
+    transform: translateX(5px);
+
+}
+
+/*estilos para el titulo video tutorial*/
+.boton p{
+    font-weight: 500;
+    font-size: 3em;
+    color: #888;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+/*posicion y tamaño al contenedor que tendra el contenido*/
+.clip{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    transition: 0.3s;
+
+}
+
+/*cuando este activo haga una transicion y se muestre por esto es la scala 1 es que se muestre y 0 ocultar*/
+.clip.active{
+    transition-delay: 0.3s;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/*se le da posicion tamaño y bordes y sombras al video*/
+.clip video{
+    max-width: 900px;
+    outline: none;
+    border: 10px solid var(--segundario);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+
+}
+
+/*se le da estilos a la palabra de cerrar que servira para cerrar el video*/
+.clip .cerrar{
+    position: absolute;
+    top: -90px;
+    right: -30px;
+    cursor: pointer;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--segundario);
+}
+
+/*se crea el responsive*/
+@media (max-width:991px){
+    .clip video{
+        max-width: 80%;
+    
+    }   
+}
+
+
+  
