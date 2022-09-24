@@ -84,7 +84,7 @@ debera de justificar su reporte -->
             
             <p class="block">
                <label>Justifique el reporte de la empresa</label> 
-                <textarea name="message" rows="3" id="empresaReport"></textarea>
+                <textarea name="message" rows="3" id="empresaReport" required></textarea>
             </p>
             <p class="block">
                 <button onclick="verificacion()">
