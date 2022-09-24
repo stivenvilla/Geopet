@@ -12,7 +12,7 @@ switch($tipoUsuario){
         $sql->execute();
         $resultado3=$sql->fetch(PDO::FETCH_ASSOC);
         $correo=$resultado3['correo'];
-        if($sql){
+        if($sql->rowCount()>0){
             echo'<script>alert("En el momento de cambiar la contraseña usted sera notificado via correo electronico");
             </script>';
             
@@ -27,7 +27,7 @@ switch($tipoUsuario){
         $sql->execute();
         $resultado2=$sql->fetch(PDO::FETCH_ASSOC);
         $correo=$resultado2['correo'];
-        if($sql){
+        if($sql->rowCount()>0){
             echo'<script>alert("En el momento de cambiar la contraseña usted sera notificado via correo electronico");
             </script>';
             
@@ -42,7 +42,7 @@ switch($tipoUsuario){
         $sql->execute();
         $resultado2=$sql->fetch(PDO::FETCH_ASSOC);
         $correo=$resultado2['correo'];
-        if($sql){
+        if($sql->rowCount()>0){
             echo'<script>alert("En el momento de cambiar la contraseña usted sera notificado via correo electronico");
             </script>';
             
