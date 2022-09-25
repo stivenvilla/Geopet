@@ -61,7 +61,6 @@ $resultadoComent=$coment->fetchAll(PDO::FETCH_ASSOC);
               <li><a href="../crud/misReservas.php">Reservas</a></li>
               <li><a href="../crud/cambioDeclaveU.php">Contraseña</a></li>
               <li><a href="../crud/mascotas.php">Mascotas</a></li>
-              <li><a href="reportar.php">Reportar</a></li>
               <li><a href="cerrar-sesion.php">Salir</a></li>
             </ul>
           </li>
