@@ -11,7 +11,7 @@
     <!--se esta creando el div del boton-->
     <div class="boton">
         <div class="play"></div>
-        <p>Video Tutorial</p>
+        <p>Video Tutorial GEOPET</p>
     </div>
 
     <!--se esta creando el div de lo que va ir dentro del boton al abrirlo-->
