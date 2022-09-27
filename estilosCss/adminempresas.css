@@ -269,7 +269,7 @@ input[type="submit"]:hover {
 }
 
 
-/* boton para descargar base de datos */
+/* boton para descargar base de datos a la carpeta*/
 .button {
   display: inline-block;
   border-radius: 7px;
