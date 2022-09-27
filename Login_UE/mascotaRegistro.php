@@ -42,7 +42,7 @@
                 <input type="text" name="docid">
                 
 
-                <label for="">Nombre de la Masocta</label>
+                <label for="">Nombre de la Mascota</label>
                 <input type="text" name="username">
                 
                 <label for="">Fecha Nacimiento</label>

@@ -70,7 +70,7 @@ estos se enviaran por post y el furmulario contara con el enctype="multipart/for
                 </div>
                 
             
-                <label for="">Correo electronico</label>
+                <label for="">Correo Electronico</label>
                 <input type="text" name="email" pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$">
                 <span class="msg-error"> <?php echo $email_err; ?></span>
                 
