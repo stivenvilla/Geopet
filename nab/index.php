@@ -63,7 +63,7 @@
 
   <script type="text/javascript">
     function mostrar(){
-      swal("ADVERTENCIA", "Señor usuario para realizar una reservación debe de iniciar sesión en la pagina");
+      swal("ADVERTENCIA", "Señor usuario para realizar una reservación debe de iniciar sesión");
     }
 
   </script>
