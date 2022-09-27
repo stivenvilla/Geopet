@@ -33,18 +33,18 @@ contraseña en dos campos para saber si los dos campos son iguales  -->
 <div class="contact-wrapper animated bounceInUp">
     <div class="contact-form">
         <h3>Cambiar Contraseña</h3>
-        <form action="cambiarClave.php" method="post" >
+        <form action="cambiarClave.php" method="post" onsubmit="return validacionCont();">
             <p>
                 <label>Identificación</label>
                 <input type="text" name="docid" id="docid" value="<?php echo $sesion; ?>" require readonly>
             </p>
             <p>
                 <label>Nueva Contraseña</label>
-                <input type="password" name="pass" id="nombre" require>
+                <input type="password" name="pass" id="con1">
             </p>
             <p>
                 <label>Confirmar Contraseña</label>
-                <input type="password" name="pass2" id="nombre" require>
+                <input type="password" name="pass2" id="con2">
             </p>
            
             <p class="block">
@@ -59,6 +59,6 @@ contraseña en dos campos para saber si los dos campos son iguales  -->
 
 </div>
 
-
+<script src="validacionCampos.js"></script>
 </body>
 </html>
