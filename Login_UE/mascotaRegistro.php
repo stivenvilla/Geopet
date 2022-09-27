@@ -35,7 +35,7 @@
     <div class="container-all">
 
         <div class="ctn-form">
-            <h1 class="title">Registro Masoctas</h1>
+            <h1 class="title">Registro Mascotas</h1>
             
             <form action="../Login_UE/registerMascota.php" method="post" enctype="multipart/form-data" >
                 <label for="">Numero de Identificación</label>
