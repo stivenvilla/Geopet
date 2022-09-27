@@ -157,7 +157,7 @@ $resultadoComent=$coment->fetchAll(PDO::FETCH_ASSOC);
     	<ul id="comments">
         	<li class="cmmnt">
             	<div class="avatar">
-                <img src="../imagenes/logomientras.jpg" height="55" width="55">
+                <img src="../imagenes/huellaCom.png" height="55" width="55">
                 </div>
                 <div class="cmmnt-content">
                 	<header>
