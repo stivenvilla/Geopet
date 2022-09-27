@@ -82,36 +82,12 @@
         <span class="direcion "><?php echo $row['ciudad'] . " " . $row['direccion'];?></span>
         <p class="card-text "><?php echo $row['servicios'] ?></p>
         <button class="card-btn" onclick="mostrar()">Reservar</button>
-        <!-- <div class="alert hide">
-         <span class="fas fa-exclamation-circle"></span>
-         <span class="msg">POR FAVOR INICIE SESIÓN</span>
-         <div class="close-btn">
-            <span class="fas fa-times"></span>
-         </div>
-      </div> -->
       </div>
     </div>
   </div>
   <?php } ?>
 
   </div>
-
-  <!-- codigo java script que se encarga de generar una notificacion a la hora de oprimir un boton -->
-  <!-- <script>
-         $('button').click(function(){
-           $('.alert').addClass("show");
-           $('.alert').removeClass("hide");
-           $('.alert').addClass("showAlert");
-           setTimeout(function(){
-             $('.alert').removeClass("show");
-             $('.alert').addClass("hide");
-           },5000);
-         });
-         $('.close-btn').click(function(){
-           $('.alert').removeClass("show");
-           $('.alert').addClass("hide");
-         });
-      </script> -->
 
 
   <script src="script.js"></script>
