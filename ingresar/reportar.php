@@ -75,7 +75,7 @@ debera de justificar su reporte -->
         <form action="insertarReporte.php" method="post"  onsubmit="return validacionReporte();">
             <p>
                 <label>Empresa</label>
-                <input type="text" name="cEmpresa" value="<?php echo $cod_empresa;?>">
+                <input type="text" name="cEmpresa" value="<?php echo $cod_empresa;?>" readonly>
             </p>
             <p class="block">
                <label>Documento de identificación</label> 
@@ -84,10 +84,10 @@ debera de justificar su reporte -->
             
             <p class="block">
                <label>Justifique el reporte de la empresa</label> 
-                <textarea name="message" rows="3" id="empresaReport" required></textarea>
+                <textarea name="message" rows="3" id="empresaReport" required ></textarea>
             </p>
             <p class="block">
-                <button onclick="verificacion()">
+                <button>
                     Reportar
                 </button>
             </p>
