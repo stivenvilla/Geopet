@@ -78,7 +78,7 @@
     <div class="card articulo">
       <img class="card-img" src="data:image/jpeg;base64,<?php echo base64_encode($row['foto_establecimiento']); ?>" alt="">
       <div class="card-content articulo">
-        <h1 class="card-header "><?php echo $row['nombre'];?></h1>
+        <h1 class="card-header "><?php echo strtoupper($row['nombre']);?></h1>
         <span class="direcion "><?php echo $row['ciudad'] . " " . $row['direccion'];?></span>
         <p class="card-text "><?php echo $row['servicios'] ?></p>
         <button class="card-btn" onclick="mostrar()">Reservar</button>
