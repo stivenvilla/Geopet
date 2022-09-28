@@ -43,6 +43,7 @@ estos se enviaran por post y el furmulario contara con el enctype="multipart/for
                 
                 <label for="">Ciudad</label>
                 <select name="ciud" class="select">
+                <option value="">Selecionar Ciudad</option>
                     <?php foreach($resultado as $ciudad){ ?>
                     <option value="<?php echo $ciudad['cod_ciudad']; ?>"><?php echo $ciudad['nombre']; ?></option>
                     <?php } ?>
