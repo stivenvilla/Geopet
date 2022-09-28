@@ -6,7 +6,7 @@
 }
 
 body{
-  background: url(../aleman.jpg);
+  background: url(/imagenes/paseo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -124,135 +124,6 @@ label #cancel{
   }
 }
 
-
-/* formulario de actualizar */
-.form-register{
-  width: 400px;
-  background: #9E7F7F;
-  padding: 30px;
-  margin: auto;
-  margin-top: 100px;
-  border-radius: 20px;
-  color: white;
-  box-shadow: 7px 13px 37px #9e7f7fdd;
-}
-
-
-.controls {
-  width: 100%;
-  background: #eeddddb8;
-  padding: 10px;
-  border-radius: 40px;
-  margin-bottom: 16px;
-  border: 1px solid #EEDDDD;
-  font-family: 'calibri';
-  font-size: 18px;
-  color: black;
-}
-
-textarea{
-  width: 100%;
-  background: #eeddddb8;
-  padding: 10px;
-  margin-bottom: 16px;
-  border: 1px solid #EEDDDD;
-  font-family: 'calibri';
-  font-size: 18px;
-  color: black;
-  resize: none;
-  border-radius:10px;
-}
-
-.form-register .boton{
-  width: 100%;
-  background: #eeddddb8;
-  border: none;
-  padding: 12px;
-  border-radius: 20px;
-  color: black;
-  margin: 16px 0;
-  font-size: 16px;
-  letter-spacing: 2px;
-  cursor: pointer;
-}
-
-
-/* formulario para actualizar */
-.container-all {
-  width: 100%;
-  max-width: 1000px;
-  margin: auto;
-  margin-top: 30px;
-  display: flex;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.ctn-form {
-  width: 100%;
-  padding: 40px;
-  background: #f7f7f7d0;
-}
-
-
-.title {
-  text-align: center;
-  margin-top: 14px;
-  font-weight: 300;
-  color: #7a7a7a;
-}
-
-label {
-  display: block;
-  margin-top: 30px;
-  font-size: 20px;
-  font-weight: 300;
-  color: #7a7a7a;
-}
-
-input[type="text"]{
-  width: 100%;
-  height: 30px;
-  background: rgba(0, 0, 0, 0);
-  border: 0px;
-  outline: 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
-  color: #0a0a0a;;
-  font-size: 16px;
-}
-
-input[type="file"]{
-  margin-top: 10px;
-  color: #9E7F7F;
-}
-
-textarea{
-  width: 100%;
-  margin-top: 10px;
-  background:#f7f7f7d0;
-  color: black;
-  border: 1px dotted black;
-  resize: none;
-}
-
-
-
-input[type="submit"] {
-  width: 100%;
-  height: 50px;
-  margin-top: 60px;
-  color: black;
-  border: 0px;
-  border-radius: 20px;
-  background: #9E7F7F;;
-  font-weight: 700;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-input[type="submit"]:hover {
-  cursor: pointer;
-}
 
 
 /* RESPONSIVE */

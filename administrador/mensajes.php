@@ -66,7 +66,7 @@
       <?php foreach($resultado as $row){?>
         <div class="car">
             <div class="imgBox">
-                <img src="../imagenes/logomientras.jpg" alt="">
+                <img src="../imagenes/logo.PNG" alt="">
             </div>
             <div class="details">
                 <p><?php echo $row['correo'] ?></p> <br>
