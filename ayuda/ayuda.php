@@ -16,7 +16,7 @@
 
     <!--se esta creando el div de lo que va ir dentro del boton al abrirlo-->
     <div class="clip">
-        <video src="../videos/RECOMPENSA POR EL CONEJO  LOONEY TUNES CARTOONS  CARTOON NETWORK.mp4" controls></video>
+        <video src="../videos/usuarioGeopet.mp4" controls></video>
         <b class="cerrar">Cerrar</b>
     </div>
 

@@ -126,7 +126,7 @@ sombreado*/
 /*se le da estilos a la palabra de cerrar que servira para cerrar el video*/
 .clip .cerrar{
     position: absolute;
-    top: -90px;
+    top: -40px;
     right: -30px;
     cursor: pointer;
     font-weight: 900;
