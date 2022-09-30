@@ -3,7 +3,7 @@
   require '../config/database.php';
   $db=new database(); //se hace una instancia de la base de datos
   $con = $db->conectar();
-  $sql=$con->prepare("SELECT * FROM mensajes"); //se prepara la consulta
+  $sql=$con->prepare("SELECT * FROM mensajes ORDER BY fechan DESC"); //se prepara la consulta
   $sql->execute(); //se ejecuta la consulta
   $resultado=$sql->fetchAll(PDO::FETCH_ASSOC); //se hace un array
 ?>
