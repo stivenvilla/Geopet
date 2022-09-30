@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--se importan las librerias plotly, boostrap y jquery para el uso de graficas-->
     <link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.css">
-    <script src="librerias/jquery-3.3.1.min.js"></script>
+	<script src="librerias/jquery-3.3.1.min.js"></script>
 	<script src="librerias/plotly-latest.min.js"></script>
-    <title>Graficas</title>
+    <title>Reportes</title>
 </head>
 <body>
+	<style>
+		.container{
+			margin-top: 50px;
+
+		}
+
+	</style>
 	<!--creacion del panel -->
 	<div class="container">
 		<div class="row">
@@ -22,9 +29,11 @@
 					<div class="panel panel-body">
 						<div class="row">
 							<div class="col-sm-6">
+								<h4 style="margin-left:120px;">Reservas últimos seis meses</h4>
 								<div id="cargaLineal"></div>
 							</div>
 							<div class="col-sm-6">
+							<h4 style="margin-left:120px;">Empresas con más reservas del último mes</h4>
 								<div id="cargaBarras"></div>
 							</div>
 						</div>
@@ -33,6 +42,7 @@
 			</div>
 		</div>
 	</div>
+
 </body>
 </html>
 <!---->
