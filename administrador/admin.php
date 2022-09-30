@@ -61,7 +61,7 @@ if(!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] != true){
       <i class="fa-solid fa-comment"></i>
         <span>Mensajes</span>
       </a>
-      <a href="#">
+      <a href="../graficas/graficas.php">
       <i class="fas fa-calendar"></i>
         <span>Reportes</span>
       </a>

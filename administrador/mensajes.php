@@ -44,7 +44,7 @@
       <i class="fa-solid fa-comment"></i>
         <span>Mensajes</span>
       </a>
-      <a href="#">
+      <a href="../graficas/graficas.php">
       <i class="fas fa-calendar"></i>
         <span>Reportes</span>
       </a>
