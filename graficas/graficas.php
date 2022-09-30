@@ -17,7 +17,7 @@
 			<div class="col-sm-12">
 				<div class="panel panel-primary">
 					<div class="panel panel-heading">
-						Graficas con plotly js
+						Reportes
 					</div>
 					<div class="panel panel-body">
 						<div class="row">
