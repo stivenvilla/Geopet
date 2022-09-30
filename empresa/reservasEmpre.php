@@ -16,7 +16,7 @@ if(!isset($sesion)){
   $resultado=$sql->fetchAll(PDO::FETCH_ASSOC);
 
   if(!$resultado){
-    echo'<script>alert("No se han encontrado empresas relacionadas con la empresa")
+    echo'<script>alert("Señor usuario no se han encontrado reservaciones disponibles por favor intentelo mas tarde")
     window.location="../empresa/datosEmpresa.php";
     </script>';
   
