@@ -32,8 +32,24 @@
         		{
         			x: datosX,
         			y: datosY,
-        			type: 'bar'
+        			type: 'bar',
+					marker: {
+						color: '#9E7F7F',
+
+					}
         		}
         	];
-            Plotly.newPlot('grafica-barras', data);
+
+			var layout={
+					title: 'Empresas con más reservas en el último mes',
+				xaxis:{
+					title: 'Empresas'
+				},
+				yaxis:{
+					title: 'Cantidad'
+				},
+				bargap :0.05
+			};
+
+            Plotly.newPlot('grafica-barras', data, layout);
             </script>

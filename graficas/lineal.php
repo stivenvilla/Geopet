@@ -32,10 +32,18 @@
 	            var trace1 = {
 		            x: datosX,
 		            y: datosY,
-		            type: 'scatter'
+		            type: 'scatter', 
+					line: {
+						color: '#9E7F7F',
+						width: 2
+					}
 	            };
 
+				var layout={
+					title: 'Reservas últimos seis meses',
+				}
+
 	            var data = [trace1];
-                Plotly.newPlot('grafica-lineal', data);
+                Plotly.newPlot('grafica-lineal', data, layout);
 
             </script>

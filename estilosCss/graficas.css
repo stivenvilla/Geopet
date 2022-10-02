@@ -1,0 +1,70 @@
+body {
+    background:url(../imagenes/Accesorios.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    }
+      .container{
+          margin-top: 20px;
+
+      }
+
+      .panel .panel-heading{
+          background: #9E7F7F;
+      }
+
+      /* estos son los estilos del boton continuar */
+      button {
+          cursor: pointer;
+          font-weight: 700;
+          font-family: Helvetica,"sans-serif";
+          transition: all .2s;
+          padding: 10px 20px;
+          border-radius: 100px;
+          background: #9E7F7F;
+          border: 1px solid transparent;
+          display: flex;
+          align-items: center;
+          font-size: 15px;
+          margin-left: 85%;
+          animation: saltar 1.5s ease-in-out infinite;
+      }
+
+      button:hover {
+          background: #fff;
+      }
+
+      button span{
+          color: black;
+      }
+
+      button > svg {
+          width: 34px;
+          margin-left: 10px;
+          transition: transform .3s ease-in-out;
+      }
+
+      button:hover svg {
+          transform: translateX(5px);
+      }
+
+      button:active {
+          transform: scale(0.95);
+      }
+
+      /*le estoy haciendo una animacion de salto al boton*/
+@keyframes saltar{
+  0%
+  {
+      transform: translateY(0);
+  }
+  50%
+  {
+      transform: translateY(-15px);
+  }
+  100%
+  {
+      transform: translateY(0);
+  }
+}
