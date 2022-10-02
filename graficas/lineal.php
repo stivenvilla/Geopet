@@ -41,7 +41,14 @@
 
 				var layout={
 					title: 'Reservas últimos seis meses',
-				}
+					xaxis:{
+					title: 'Meses'
+				},
+				yaxis:{
+					title: 'Cantidad'
+				},
+
+			};
 
 	            var data = [trace1];
                 Plotly.newPlot('grafica-lineal', data, layout);
