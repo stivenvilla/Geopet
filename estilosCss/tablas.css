@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+#informes{
+  margin-left: 150px;
+  width: 400px;
+  margin: auto;
+  margin-top: 40px;
+  font-family: 'Poppins', sans-serif; 
+}
+
+#informe4{
+  margin-left: 150px;
+  width: 900px;
+  margin: auto;
+  margin-top: 40px;
+}
+#informe6{
+  margin-left: 150px;
+  width: 700px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#informe7{
+  margin-left: 150px;
+  width: 800px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+
+table{
+  background-color: white;
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid black;
+  
+}
+
+th, td {
+  padding: 13px;
+}
+
+thead{
+  background-color: #9E7F7F;
+  border-bottom: solid 5px white;
+  color: white;
+  border: 2px solid black;
+}
+
+tr:nth-child(even){
+    background-color: white;
+}
+
+tr:hover td{
+    background-color: #9E7F7F;
+    color: #EEDDDD;
+}
+
+.filtro{
+  display: none;
+}
+  
+  @media screen and (min-width:480px) {
+    .buscar:hover>.seleccionarFecha{
+      width: 190px;
+    }
+    
+  }
+  
+  @media screen and (min-width:768px) {
+    .buscar:hover>.seleccionarFecha{
+      width: 300px;
+    }
+    
+    
+  }
+
+
+
+   /* ------------- */
+   .fecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   }
+   .nomEmpresa{
+    padding: 13px;
+    background-color: #9E7F7F;
+    color: white;
+    text-align: center;
+    border-collapse: collapse;
+    border-left:  2px solid black;
+    border-right:  2px solid black;
+    border-top: 2px solid black;
+    /* font-family: 'Poppins', sans-serif;  */
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; 
+    
+    
+  }
+  .nomEmpresa.content{
+   
+    font-family: 'Poppins', sans-serif; 
+  }
+
+  .containerFecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 40px;
+    background-color: #9E7F7F;
+    margin-top: 3%;
+    margin: auto;
+  }
+
+  #containerFecha0{
+    height: 50px;
+    width: 120px;
+  }
+
+  #containerFecha1{
+    height: 50px;
+    width: 650px;
+  }
+
+  #containerFecha2{
+    height: 50px;
+    width: 850px;
+  }
+
+  #containerFecha3{
+    height: 50px;
+    width: 400px;
+  }
+
+  #containerFecha4{
+    height: 50px;
+    width: 450px;
+  }
+
+  #containerFecha5{
+    height: 50px;
+    width: 700px;
+    /* display: block; */
+  }
+  #containerFecha6{
+    height: 50px;
+    width: 450px;
+  }
+
+  .frase{
+    position: relative;
+  }
+
+  .titulo{
+    text-align: center;
+    margin: auto;
+    height: 65px;
+    width: 100%;
+    margin-top: 5%;
+    position: static;
+    /* display: block; */
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 25px;
+    color: #9E7F7F;
+  }
+
+  .codEmpresa{
+    width: 90px;
+    color: #757575;
+    justify-content: center;
+    text-align: center;
+    
+  }
+ 
+  .selecAnio{
+    width: 90px;
+    /* height: 22.5px; */
+    justify-content: center;
+    /* margin-bottom: 2.5%; */
+    color: #757575;
+    text-align: center;
+  }
+  
+  .seleccionarFecha{
+    justify-content: center;
+    width: 90px;
+  }
+  
+  select {
+    color: #757575;
+    text-align: center;
+  }
+  
+  option{
+    color: #171c24;
+    text-align: left;
+  }
+  
+  .selecDia{
+    width: 90px;
+    /* height: 22.5px; */
+    justify-content: center;
+    /* margin-bottom: 2.5%; */
+    color: #757575;
+    text-align: center;
+  }
+
+  .enviar{
+    margin-left: 15px;
+    width: 90px;
+  }
+
+  .descargar{
+    margin-left: 15px;
+    width: 90px;
+    
+  }
+ 
+  .espacio{
+    width: 23px;
+    
+  }

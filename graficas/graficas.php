@@ -36,7 +36,7 @@
 	</div>
 
 	<!-- este es el boton para ir a los demas reportes -->
-	<a href=""><button>
+	<a href="../reportes/tabla0cantidadReservas.php"><button>
     <span>Continuar</span>
     <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
