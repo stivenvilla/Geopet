@@ -108,14 +108,14 @@
 
                 <label for="">Ciudad</label>
                 <select name="ciud" class="select">
-                  <option value="">Selecionar Ciudad</option>
+                  <!-- <option value="">Selecionar Ciudad</option> -->
                     <?php foreach($ciudadR as $ciudad){ ?>
                     <option value="<?php echo $ciudad['cod_ciudad']; ?>"><?php echo $ciudad['nombre']; ?></option>
                     <?php } ?>
                 </select>
                 
                 <label for="">Fecha de Nacimiento</label>
-                <input type="text" name="naci" value="<?php echo $fecha; ?>">
+                <input type="date" name="naci" value="<?php echo $fecha; ?>">
                
                 
             

@@ -108,7 +108,7 @@
                 
                 <label for="">Ciudad</label>
                 <select name="ciud" class="select">
-                  <option value="">Selecionar Ciudad</option>
+                  <!-- <option value="">Selecionar Ciudad</option> -->
                     <?php foreach($ciudadR as $ciudad){ ?>
                     <option value="<?php echo $ciudad['cod_ciudad']; ?>"><?php echo $ciudad['nombre']; ?></option>
                     <?php } ?>
