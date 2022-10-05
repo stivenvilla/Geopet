@@ -1,4 +1,12 @@
 <?php
+
+session_start();
+
+//se hace la sesion para que no se pueda ingresar a la pagina principal sin antes haber iniciado sesion
+if(!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] != true){
+  header("location: ingresar.php");
+  exit;
+}
 //se esta llamando a la base de datos
   require '../config/database.php';
   $db=new database(); //se hace una instancia de la base de datos
