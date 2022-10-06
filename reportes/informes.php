@@ -23,6 +23,7 @@
         <div class="content">
            <div class="logo"> <a href="#">GEOPET</a></div>
            <div class ="inicio" ><a href="../administrador/admin.php">Volver</a></div>
+           <div class ="inicio" ><a href="../reportes/reportesPdf.php">Pdf</a></div>
         </div>
     </nav>
   </div>
