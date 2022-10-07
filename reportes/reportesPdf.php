@@ -254,11 +254,13 @@
         </form>
     </div><br>
 
+
+    
     <h1 class="titulo">Servicio más solicitado en empresa</h1>
 
     <div class = "containerFecha" id = "containerFecha4">
        
-        <form method="post" action="" class="fecha">  
+        <form method="post" action="../pdfsDescarga/tabla5.php" class="fecha">  
             <input type="text" class = "codEmpresa"  name= "nit" placeholder="Nit Empresa" required>
             <input type="number" class="selecAnio" placeholder="N° meses"  name="selecMes" min="01" max="12" required>   
             <input type="submit" value="Descargar" name="enviar" class ="enviar">                   
@@ -266,9 +268,10 @@
         
     </div><br>
 
+
     <div class="titulo">Informacion de reservas</div>
     <div class = "containerFecha" id = "containerFecha5">
-        <form method="post" action="" class="fecha">
+        <form method="post" action="../pdfsDescarga/tabla6.php" class="fecha">
             <input type="number" class="selecAnio" placeholder="Año"  name="selecAnno" min="2019" max="2023" required>   
            
             <select  class="seleccionarFecha"  name ="selecMes1" required>
@@ -310,11 +313,11 @@
 
     </div><br>
 
-    <div class="titulo">Usuario que más reserva en una empresa</div>
+    <div class="titulo">Usuario con más reserva en una empresa</div>
 
     <div class = "containerFecha" id = "containerFecha6">
                
-        <form method="post" action="" class="fecha">
+        <form method="post" action="../pdfsDescarga/tabla7.php" class="fecha">
             
             <input type="text" class = "codEmpresa"  name= "nit" placeholder="Nit Empresa" required>  
             <input type="submit" value="Descargar" name="enviar" class ="enviar">          
@@ -325,7 +328,7 @@
 
     <div class = "containerFecha" id = "containerFecha6">
            
-        <form method="post" action="" class="fecha">
+        <form method="post" action="../pdfsDescarga/tabla8.php" class="fecha">
             
             <input type="text" class = "codEmpresa"  name= "nit" placeholder="Nit Empresa" required>  
             <input type="submit" value="Descargar" name="enviar" class ="enviar">   
@@ -336,7 +339,7 @@
 
     <div class = "containerFecha" id = "containerFecha6">
       
-        <form method="post" action="" class="fecha">
+        <form method="post" action="../pdfsDescarga/tabla9.php" class="fecha">
             
             <input type="text" class = "codEmpresa"  name= "nit" placeholder="Nit Empresa" required>  
             <input type="submit" value="Descargar" name="enviar" class ="enviar">  
@@ -348,7 +351,7 @@
 
     <div class = "containerFecha" id = "containerFecha6">
    
-        <form method="post" action="" class="fecha">
+        <form method="post" action="../pdfsDescarga/tabla10.php" class="fecha">
             
             <input type="text" class = "codEmpresa"  name= "nit" placeholder="Nit Empresa" required>  
             <input type="submit" value="Descargar" name="enviar" class ="enviar">

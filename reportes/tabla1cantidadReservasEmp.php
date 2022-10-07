@@ -89,9 +89,6 @@
             
         </form>
         
-        <form method="post" action="#" >
-            <input type="submit" value="Descargar" name="descargar" class="descargar">
-        </form>
 
     </div>
 

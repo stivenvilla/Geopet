@@ -43,9 +43,7 @@
             <input type="text" class = "codEmpresa"  name= "nit" placeholder="Nit Empresa" required>  
             <input type="submit" value="Enviar" name="enviar" class ="enviar">  
         </form>
-        <form method="post" action="#" >
-            <input type="submit" value="Descargar" name="descargar" class="descargar">
-        </form> 
+        
     </div>
 
     <div id="informe7">

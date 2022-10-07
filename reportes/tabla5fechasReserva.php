@@ -78,9 +78,7 @@
                 
         </form>
             
-        <form method="post" action="#.php" >
-            <input type="submit" value="Descargar" name="descargar" class="descargar" id="d4">
-        </form>
+        
 
     </div>
 
