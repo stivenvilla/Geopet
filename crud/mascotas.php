@@ -64,25 +64,25 @@ if(!isset($sesion)){
 
 </div>
     <!-- pagina en la que el usuario podra ver las mascotas que son de su propieda -->
-    <div class="container">
+
       <?php foreach($resultadoPets as $ism) { ?>
         <div class="card">
-        <div class="imgBx">
+        <div class="face front">
         <img class="card-img" src="data:image/jpeg;base64,<?php echo base64_encode($ism['fotoMascota']); ?>" alt="">
-
-      </div>
-        <div class="content">
-            <h2><?php echo $ism['nombreMacota']?></h2><br>
-            <p>Nacimiento: <?php echo $ism['fechaNaci']?> <br>
-              Raza: <?php echo $ism['raza']?><br>
-              recomendaciones: <?php echo $ism['recomendaciones']?>
-          </p>
-          
+            <h3><?php echo $ism['nombreMacota']; ?></h3>
         </div>
+        <div class="face back">
+            <h3><?php echo $ism['nombreMacota'];?></h3>
+            <p>Raza: <?php echo $ism['raza'];?> <br> Fecha Nacimiento: <?php echo $ism['fechaNaci'];?></p>
+            <p>Recomendaciones: <?php echo $ism['recomendaciones'];?></p>
+            <div class="link">
+            </div>
         </div>
+    </div>
         <?php } ?>
-  </div>
 
+
+        
     
   
 </body>
