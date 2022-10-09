@@ -37,8 +37,15 @@ $resultadoComent=$coment->fetchAll(PDO::FETCH_ASSOC);
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   
 </head>
-<body>
+<body class="hiden">
 
+<div class="cargador centrando" id="onload">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
 
   <div class="wrapper">
@@ -179,7 +186,12 @@ $resultadoComent=$coment->fetchAll(PDO::FETCH_ASSOC);
   <?php } ?>
        
 
- 
+  <script>
+    window.onload=function(){
+      $('#onload').fadeOut();
+      $('body').removeClass('hiden');
+    }
+  </script>
 
 
   <script src="../nab/script.js"></script>

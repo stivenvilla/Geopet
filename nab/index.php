@@ -23,7 +23,17 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   
 </head>
-<body>
+<body class="hiden">
+
+    <div class="cargador centrando" id="onload">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
   <div class="wrapper">
     <nav>
       <input type="checkbox" id="show-search">
@@ -88,6 +98,14 @@
   <?php } ?>
 
   </div>
+
+
+  <script>
+    window.onload=function(){
+      $('#onload').fadeOut();
+      $('body').removeClass('hiden');
+    }
+  </script>
 
 
   <script src="script.js"></script>
