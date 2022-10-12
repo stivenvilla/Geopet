@@ -103,7 +103,7 @@ estos se enviaran por post y el furmulario contara con el enctype="multipart/for
 
 
 
-    <script src="ojo.js"></script>
+    <script src="../javaScript/ojo.js"></script>
 </body>
 
 </html>

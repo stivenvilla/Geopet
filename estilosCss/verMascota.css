@@ -17,7 +17,7 @@ body{
     background-attachment: fixed;
     min-height: 100vh;
 }
-
+/* este es el diseño de las cartas que contendran la informacion de las mascotas */
 .container{
     position: relative;
     width: 1000px;

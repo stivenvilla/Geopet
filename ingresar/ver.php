@@ -116,7 +116,7 @@ if($id=='' || $token==''){
 </div>
 
 
-<script src="validacionReserva.js"></script>
+<script src="../javaScript/validacionReserva.js"></script>
 
 </body>
 </html>

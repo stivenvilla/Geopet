@@ -98,7 +98,7 @@ debera de justificar su reporte -->
 
 </div>
 
-<script src="validacionReporte.js"></script>
+<script src="../javaScript/validacionReporte.js"></script>
 
 </body>
 </html>

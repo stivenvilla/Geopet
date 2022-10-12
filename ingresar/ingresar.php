@@ -11,7 +11,6 @@ require 'code-login.php'
     <meta charset="UTF-8">
     <title>Ingresar</title>
     <link rel="stylesheet" href="../estilosCss/login.css">
-    <script src="/ojo.js"></script>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
@@ -60,7 +59,7 @@ require 'code-login.php'
 
 
 
-    <script src="ojo.js"></script>
+    <script src="../javaScript/ojo.js"></script>
 </body>
 
 </html>

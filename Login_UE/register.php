@@ -95,8 +95,8 @@
     </div>
 
 
-<!-- se trae ek archivo encargado de mostrar la contraseña -->
-    <script src="ojo.js"></script>
+<!-- se trae el archivo encargado de mostrar la contraseña -->
+    <script src="../javaScript/ojo.js"></script>
 </body>
 
 </html>

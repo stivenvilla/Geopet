@@ -127,7 +127,7 @@ $ms=$mascotaSql->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 
-<script src="validacionReserva.js"></script>
+<script src="../javaScript/validacionReserva.js"></script>
 
 </body>
 </html>
