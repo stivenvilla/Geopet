@@ -48,7 +48,7 @@ if(!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] != true){
       </a>
       <a href="copiaSe.php" class="active">
       <i class="fa-solid fa-cloud-arrow-down"></i>
-        <span>BD</span>
+        <span>Seguridad</span>
       </a>
       <a href="../ingresar/cerrar-sesion.php">
       <i class="fa-solid fa-right-from-bracket"></i>
