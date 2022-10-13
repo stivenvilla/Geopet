@@ -31,7 +31,7 @@
                     
                 }else{
                     echo'
-                    <script>alert("Ha ocurrido un fallo por favor intentelo mas tarde");
+                    <script>alert("Ha ocurrido un error, Por favor intentelo mas tarde");
                     window.location="../ingresar/bienvenida.php";
                     </script>';
                 }
