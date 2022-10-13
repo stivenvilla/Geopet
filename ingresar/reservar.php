@@ -18,7 +18,7 @@
   if($sql){
     echo'
      <script>
-     alert("Señor usuario debe de estar pendiente del corrreo electronico para la verificación de la empresa");
+     alert("Señor usuario, debe de estar pendiente del corrreo electrónico para la verificación de su reserva por parte de  la empresa");
      window.location="../ingresar/bienvenida.php"
      </script>
     

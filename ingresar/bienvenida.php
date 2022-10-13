@@ -124,14 +124,14 @@ $resultadoComent=$coment->fetchAll(PDO::FETCH_ASSOC);
 
                 
                 <div class="col-2">
-                    <label>Numero de contacto</label>
+                    <label>Número de Contacto</label>
                     <input type="text" name="telefono" class="text" placeholder="numero de contacto">
                     <span class="msg-error"><?php echo $telefono_err; ?></span>
                   </div>
 
                 
                 <div class="col-2">
-                    <label>escriba su comentario aqui</label>
+                    <label>Escriba su Comentario aqui</label>
                     <textarea placeholder="mensaje" name="mensaje" required></textarea>
                     <span class="msg-error"><?php echo $mensaje_err; ?></span>
                 </div>
