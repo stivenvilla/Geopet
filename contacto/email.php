@@ -11,12 +11,12 @@
 <body>
   <!-- formulario para que el usuario inserte el mensaje -->
   <form  class="form-register"  action="contactoP.php"  method="POST"  id="miformulario" onsubmit="return validacionContacto();">
-    <h4>CONTACTO</h4>
+    <h4>Contacto</h4>
     <input class="controls" type="text" name="nombre" id="nombres" placeholder="Ingrese su Nombre"  pattern="[a-zA-ZÀ-ÿ\s]{4,40}" title="No se admiten números ni caracteres especiales">
-    <input class="controls" type="email" name="correo" id="correoEL" placeholder="Ingrese su correo electrónico">
+    <input class="controls" type="email" name="correo" id="correoEL" placeholder="Ingrese su Correo Electrónico">
     <input class="controls" type="text" name="asunto" id="ASUNTO" placeholder="Ingrese el Asunto">
     <input class="controls" type="text" name="numero" id="tele" placeholder="Ingrese el Teléfono">
-    <textarea   name="mensaje" id="MensaJEE" placeholder="Ingrese su mensaje aqui.." ></textarea>
+    <textarea   name="mensaje" id="MensaJEE" placeholder="Ingrese su Mensaje aqui.." ></textarea>
     <input class="boton" type="submit" value="ENVIAR">
   </form>
 

@@ -19,7 +19,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Registro</title>
+    <title>Registro Mascota</title>
     <link rel="stylesheet" href="../estilosCss/registroempresa.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <script language="javascript" src="../config/jquery-3.6.1.min.js"></script>

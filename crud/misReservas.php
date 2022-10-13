@@ -85,7 +85,7 @@ session_start();
                     <th>Usuario</th>
                     <th>Nombre Mascota</th>
                     <th>Servicio</th>
-                    <th>Fecha reserva</th>
+                    <th>Fecha Reserva</th>
                     <th>Estado</th>
                     <th></th>
 

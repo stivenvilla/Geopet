@@ -101,13 +101,13 @@ if($id==''  || $token==''){
                 <input type="text" name="serv" id="ser" value="<?php echo $serv;?>">
             </p>
             <p>
-               <label>Correo usuario</label>
+               <label>Correo Electronico</label>
                <input type="text" name="correo" id="correo" value="<?php echo $correo;?>">
            </p>
             
             </p>
             <p class="block">
-               <label>Justifición de cancelación</label> 
+               <label>Justifición de Cancelación</label> 
                 <textarea name="message" rows="3" id="mesa" placeholder="Pro favor escriba el motivo por el cual ha cancelado la reservacion"></textarea>
             </p>
             <p class="block">

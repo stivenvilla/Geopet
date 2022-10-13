@@ -101,7 +101,7 @@ if($id=='' || $token==''){
                 <input type="text" name="mas" id="mas" value="<?php echo $ms;?>">
             </p>
             <p>
-                <label>Asignar hora</label>
+                <label>Asignar Hora</label>
                 <input type="text" name="hora" id="hr">
             </p>
             <p>
@@ -109,7 +109,7 @@ if($id=='' || $token==''){
                 <input type="text" name="serv" id="ser" value="<?php echo $serv;?>">
             </p>
             <p>
-               <label>Correo usuario</label>
+               <label>Correo Electronico</label>
                <input type="text" name="correo" id="correo" value="<?php echo $correo;?>">
            </p>
             

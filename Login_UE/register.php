@@ -63,7 +63,7 @@
                 <input type="text" name="MV">
                 <span class="msg-error"><?php echo $MV_err; ?></span>
                 
-                <label for="">Correo electronico</label>
+                <label for="">Correo Electronico</label>
                 <input type="text" name="email" pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$">
                 <span class="msg-error"> <?php echo $email_err; ?></span>
                 
